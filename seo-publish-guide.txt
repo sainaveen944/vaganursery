@@ -1,0 +1,48 @@
+VAGA NURSERY — SEO & PUBLISHING GUIDE
+
+1. Publish the website first
+- Create an account with a static website host such as Netlify.
+- Upload the extracted website folder (the folder containing index.html, style.css, and images/).
+- The host will provide a public HTTPS website address. Test it on mobile and desktop.
+- For a memorable address, buy a domain such as vaganursery.in (availability and price must be checked with a registrar) and connect it in the host's domain settings.
+
+2. Finish domain-specific SEO
+- After you have the final public HTTPS domain, add a canonical link in index.html:
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+- Create sitemap.xml in the website root, replacing YOUR-DOMAIN with the exact domain:
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://YOUR-DOMAIN/</loc></url>
+  </urlset>
+- Create robots.txt in the website root:
+  User-agent: *
+  Allow: /
+  Sitemap: https://YOUR-DOMAIN/sitemap.xml
+- Do not submit a placeholder domain. Use the exact live HTTPS address.
+
+3. Get the site into Google Search
+- Open Google Search Console: https://search.google.com/search-console/about
+- Add the site as a Domain property (requires DNS verification) or URL-prefix property.
+- Complete verification using the method Google provides.
+- Submit sitemap.xml in the Sitemaps report.
+- Use URL Inspection for the homepage and click Request indexing.
+- Check Page indexing and Performance reports over time. Crawling/indexing is not instant and submission does not guarantee ranking.
+
+4. Local visibility
+- If customers can visit the nursery in person during stated hours, create/claim one Google Business Profile for the real nursery location. Use the real business name, accurate address/pin, phone, hours, and website. Do not use a fake address or create duplicate profiles.
+- Add real photos regularly and keep plant availability and ₹9 price accurate.
+- Ask genuine customers for honest reviews; do not buy or fabricate reviews.
+
+5. Make the site useful and distinct
+- Add the actual varieties, tray/plant details, availability, pickup/delivery details (only if offered), nursery hours, and exact location.
+- Keep real original photos with descriptive alt text. Do not repeat keywords unnaturally.
+- Use the same business name, phone, address, and website on social profiles and directories.
+- Share the website on WhatsApp Business, Instagram, Facebook, and relevant local farming groups. Social profiles help people discover you, but they do not replace hosting or Search Console.
+
+Suggested search phrases to use naturally in page copy:
+- watermelon seedlings in Kattipalayam
+- watermelon plants in Namakkal
+- nursery in Kattipalayam, Namakkal
+- watermelon seedlings ₹9 per plant
+
+The included structured data and social sharing metadata are starter SEO. A live domain is needed to create a valid canonical URL and sitemap. No SEO method can guarantee a #1 Google position.

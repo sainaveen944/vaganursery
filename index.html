@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vega Nursery | Watermelon Seedlings in Velagoundampatti, Namakkal</title>
+<meta name="description" content="Buy watermelon seedlings at ₹1.50 per plant from Vega Nursery in Velagoundampatti, Namakkal, Tamil Nadu. Enquire on WhatsApp about current stock and other plants.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Vega Nursery">
+<meta name="theme-color" content="#176b3a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vega Nursery">
+<meta property="og:title" content="Vega Nursery | Watermelon Seedlings in Velagoundampatti">
+<meta property="og:description" content="Watermelon seedlings at ₹1.50 per plant and turmeric seeds at ₹1 each. Contact Vega Nursery in Velagoundampatti, Namakkal.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GardenStore",
+  "name": "Vega Nursery",
+  "description": "Nursery selling watermelon seedlings and other plants in Velagoundampatti, Namakkal, Tamil Nadu.",
+  "telephone": "+918825469697",
+  "priceRange": "₹1.50 per watermelon seedling; other plants vary",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Velagoundampatti",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Namakkal, Tamil Nadu",
+  "currenciesAccepted": "INR",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nursery plants",
+    "itemListElement": [{
+      "@type": "Offer",
+      "itemOffered": {"@type": "Product", "name": "Watermelon seedlings"},
+      "price": "1.50",
+      "priceCurrency": "INR"
+    }]
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <a class="logo" href="#home">🌱 Vega <b>Nursery</b></a>
+  <nav>
+    <a href="#home" data-en="Home" data-ta="முகப்பு">Home</a><a href="#plants" data-en="Plants" data-ta="செடிகள்">Plants</a><a href="#why" data-en="Why Us" data-ta="ஏன் நாங்கள்">Why Us</a>
+    <a href="#gallery" data-en="Gallery" data-ta="புகைப்படங்கள்">Gallery</a><a href="#faq" data-en="FAQ" data-ta="கேள்விகள்">FAQ</a><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a>
+  </nav>
+<div class="header-tools"><button id="accountBtn" class="lang-btn" type="button">Customer Login</button><button id="langBtn" class="lang-btn" type="button" aria-label="Change language to Tamil" title="தமிழில் பார்க்க">தமிழ்</button><a class="mini-wa" href="https://wa.me/918825469697" target="_blank" rel="noopener">WhatsApp</a></div>
+</header>
+
+<div id="accountPanel" class="account-panel" hidden><form id="loginForm" onsubmit="customerLogin(event)"><strong>Customer login</strong><input id="customerName" required placeholder="Your name"><button class="btn primary" type="submit">Login</button></form><div id="loggedIn" hidden><span id="welcomeCustomer"></span><button class="btn outline" type="button" onclick="customerLogout()">Logout</button></div><small>Simple browser session only; no password or secure customer account is stored.</small></div>
+<section id="home" class="hero">
+  <div>
+    <span class="location">Velagoundampatti • Namakkal • Tamil Nadu</span>
+    <p class="eyebrow" data-en="WELCOME TO VEGA NURSERY" data-ta="வேகா நர்சரிக்கு வரவேற்கிறோம்">WELCOME TO VEGA NURSERY</p>
+    <h1 data-i18n="heroTitle">Healthy plants. Better harvests.</h1>
+    <p class="lead">Watermelon seedlings and turmeric seeds for growers, farms and home gardens.</p>
+    <div class="buttons"><a class="btn primary" href="#plants" data-i18n="viewPlants">View Plants</a><a class="btn outline" href="#contact" data-i18n="sendEnquiry">Send Enquiry</a></div>
+    <div class="facts"><div><strong>₹1.50</strong><small>Watermelon / plant</small></div><div><strong>Local</strong><small>Velagoundampatti</small></div><div><strong>Bulk</strong><small>Enquiries welcome</small></div></div>
+  </div>
+  <div class="hero-art"><span class="watermelon">🍉</span><span class="leaf">🌱</span><div>Fresh seedlings<br><small>Ready for planting</small></div></div>
+</section>
+
+<section id="plants" class="section">
+  <div class="head"><p class="eyebrow" data-en="OUR PLANTS" data-ta="எங்கள் செடிகள்">OUR PLANTS</p><h2 data-en="Choose what you need" data-ta="உங்களுக்கு தேவையான செடிகளை தேர்வு செய்யுங்கள்">Choose what you need</h2><p data-i18n="plantsSub">Check current stock and pricing before visiting.</p></div>
+  <div class="filters"><button class="active" onclick="filterPlants('all',this)" data-i18n="all">All</button><button onclick="filterPlants('fruit',this)" data-i18n="fruit">Fruit</button><button onclick="filterPlants('garden',this)" data-i18n="garden">Garden</button><button onclick="filterPlants('featured',this)" data-i18n="featured">Featured</button></div>
+  <div class="cards">
+    <article class="card" data-type="featured fruit"><div class="pic red">🍉</div><div class="body"><span>FEATURED</span><h3 data-i18n="watermelon">Watermelon Seedlings</h3><p>Seedlings for watermelon cultivation. Ask about available varieties and quantities.</p><footer><b>₹1.50 <small>/ plant</small></b><a href="#contact">Enquire →</a></footer></div></article>
+    <article class="card" data-type="featured garden"><div class="pic green">🌿</div><div class="body"><span>SEEDS</span><h3 data-i18n="turmeric">Turmeric Seeds</h3><p>Turmeric seeds for planting. Ask about availability and required quantity.</p><footer><b>₹1 <small>/ seed</small></b><a href="#contact">Enquire →</a></footer></div></article><article class="card" data-type="fruit"><div class="pic green">🍊</div><div class="body"><span>FRUIT PLANTS</span><h3>Fruit Plant Varieties</h3><p>Ask about currently available fruit plants for farms and home gardens.</p><footer><b>Ask price</b><a href="#contact">Enquire →</a></footer></div></article>
+    <article class="card" data-type="garden"><div class="pic blue">🪴</div><div class="body"><span>GARDEN</span><h3>Garden Plants</h3><p>Ask for ornamental and other plants currently available.</p><footer><b>Ask price</b><a href="#contact">Enquire →</a></footer></div></article>
+  </div>
+</section>
+
+<section id="why" class="section soft">
+  <div class="head"><p class="eyebrow" data-en="WHY VEGA NURSERY" data-ta="ஏன் வேகா நர்சரி">WHY VEGA NURSERY</p><h2 data-en="Made for your planting needs" data-ta="உங்கள் நடவு தேவைகளுக்காக">Made for your planting needs</h2></div>
+  <div class="features">
+    <div>🌱<h3>Healthy seedlings</h3><p>Seedlings prepared for planting when available.</p></div>
+    <div>💬<h3>Easy enquiries</h3><p>Ask about plant type, quantity, stock and price.</p></div>
+    <div>📦<h3>Bulk enquiries</h3><p>Planning a larger planting? Tell us your quantity.</p></div>
+    <div>📍<h3>Local nursery</h3><p>Located in Velagoundampatti, Namakkal.</p></div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="head"><p class="eyebrow" data-en="GALLERY" data-ta="புகைப்படங்கள்">GALLERY</p><h2 data-en="A look at our nursery" data-ta="எங்கள் நர்சரியின் புகைப்படங்கள்">A look at our nursery</h2><p data-en="Real photos of our watermelon seedlings and nursery plants at Vega Nursery." data-ta="வேகா நர்சரியில் உள்ள தர்பூசணி நாற்றுகள் மற்றும் செடிகளின் உண்மையான புகைப்படங்கள்.">Real photos of our watermelon seedlings and nursery plants at Vega Nursery.</p></div>
+  <div class="gallery">
+    <figure><img src="images/nursery-01.jpg" alt="Watermelon seedlings growing in nursery trays" loading="lazy"><figcaption>Watermelon seedlings</figcaption></figure>
+    <figure><img src="images/nursery-02.jpg" alt="Close-up of young watermelon plants" loading="lazy"><figcaption>Young seedlings</figcaption></figure>
+    <figure><img src="images/nursery-03.jpg" alt="Rows of seedlings in nursery trays" loading="lazy"><figcaption>Nursery growing trays</figcaption></figure>
+    <figure><img src="images/nursery-04.jpg" alt="Watermelon plants in seedling trays" loading="lazy"><figcaption>Healthy plant growth</figcaption></figure>
+    <figure><img src="images/nursery-05.jpg" alt="Close-up of a nursery seedling" loading="lazy"><figcaption>Seedling close-up</figcaption></figure>
+    <figure><img src="images/nursery-06.jpg" alt="Young plants in nursery trays" loading="lazy"><figcaption>Plant development</figcaption></figure>
+    <figure><img src="images/nursery-07.jpg" alt="Watermelon seedlings in rows" loading="lazy"><figcaption>Watermelon nursery</figcaption></figure>
+    <figure><img src="images/nursery-08.jpg" alt="Nursery seedlings growing in soil plugs" loading="lazy"><figcaption>Seedling trays</figcaption></figure>
+    <figure><img src="images/nursery-09.jpg" alt="Close-up of nursery plant leaves" loading="lazy"><figcaption>New leaves</figcaption></figure>
+    <figure><img src="images/nursery-10.jpg" alt="Young plants being handled in nursery" loading="lazy"><figcaption>Plant handling</figcaption></figure>
+  </div>
+</section>
+
+<!-- Full-screen gallery viewer: tap a photo to open, then use separate zoom controls. -->
+<div id="photoViewer" class="photo-viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo gallery viewer">
+  <button class="viewer-close" type="button" aria-label="Close photo viewer">×</button>
+  <div class="viewer-count" id="viewerCount">1 / 10</div>
+  <button class="viewer-prev" type="button" aria-label="Previous photo">‹</button>
+  <div class="viewer-stage"><img id="viewerImage" alt="" draggable="false"><div class="viewer-caption" id="viewerCaption"></div></div>
+  <button class="viewer-next" type="button" aria-label="Next photo">›</button>
+  <div class="viewer-zoom" aria-label="Zoom controls">
+    <button class="zoom-in" type="button" aria-label="Zoom in">+</button>
+    <input id="zoomRange" type="range" min="1" max="3" step="0.1" value="1" aria-label="Zoom level">
+    <button class="zoom-out" type="button" aria-label="Zoom out">−</button>
+  </div>
+  <div class="viewer-thumbs" id="viewerThumbs" aria-label="Choose a photo"></div>
+</div>
+
+<section class="cta"><div><p class="eyebrow">READY TO PLANT?</p><h2>Tell us what you need.</h2><p>Send the plant name and required quantity.</p></div><a class="btn light" href="https://wa.me/918825469697?text=Hello%20Vega%20Nursery%2C%20I%20want%20to%20enquire%20about%20plants." target="_blank" rel="noopener">💬 WhatsApp Us</a></section>
+
+<section class="map-section section" id="location"><div class="head"><p class="eyebrow" data-en="FIND US" data-ta="எங்களை கண்டுபிடிக்க">FIND US</p><h2 data-en="Vega Nursery Location" data-ta="வேகா நர்சரி இருப்பிடம்">Vega Nursery Location</h2><p data-en="Open a Google Maps search for Velagoundampatti, Namakkal. Your exact business pin can be added later." data-ta="வேலக்கவுண்டம்பட்டி, நாமக்கலுக்கான Google Maps தேடலை திறக்கவும். பின்னர் உங்கள் சரியான business pin-ஐ சேர்க்கலாம்.">Open a Google Maps search for Velagoundampatti, Namakkal. Your exact business pin can be added later.</p></div><a class="btn map-btn" href="https://www.google.com/maps/search/?api=1&query=Velagoundampatti%2C%20Namakkal%2C%20Tamil%20Nadu" target="_blank" rel="noopener">📍 <span data-en="Open in Google Maps" data-ta="Google Maps-ல் திறக்கவும்">Open in Google Maps</span></a></section>
+<section id="faq" class="section">
+  <div class="head"><p class="eyebrow" data-en="FAQ" data-ta="அடிக்கடி கேட்கப்படும் கேள்விகள்">FAQ</p><h2 data-en="Common questions" data-ta="பொதுவான கேள்விகள்">Common questions</h2></div>
+  <div class="faq">
+    <details open><summary>What is the watermelon seedling price?</summary><p>The listed watermelon seedling price is ₹1.50 per plant. Please confirm stock before ordering.</p></details>
+    <details><summary>Do you sell other plants?</summary><p>Yes. Other plant varieties are available depending on current stock.</p></details>
+    <details><summary>Can I enquire for bulk quantity?</summary><p>Yes. Use the enquiry form and tell us your required quantity.</p></details>
+    <details><summary>Where is Vega Nursery?</summary><p>Velagoundampatti, Namakkal, Tamil Nadu.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="head"><p class="eyebrow" data-en="CONTACT" data-ta="தொடர்பு">CONTACT</p><h2 data-en="Send your enquiry" data-ta="உங்கள் விசாரணையை அனுப்புங்கள்">Send your enquiry</h2><p data-i18n="contactSub">Fill in your requirement and send it directly to our WhatsApp.</p></div>
+  <div class="contact-grid">
+    <div class="info"><p>📍 <b>Location</b><br>Velagoundampatti, Namakkal, Tamil Nadu</p><p>🍉 <b>Main product</b><br>Watermelon seedlings — ₹1.50 / plant<br>Turmeric seeds — ₹1 / seed</p><p>📞 <b>Phone / WhatsApp</b><br>8825469697</p></div>
+    <form onsubmit="sendEnquiry(event)">
+      <input id="name" required placeholder="Your name" data-i18n="yourName">
+      <input id="plant" required placeholder="Plant or seed needed" data-i18n="plantNeeded">
+      <input id="qty" required placeholder="Quantity" data-i18n="quantity">
+      <textarea id="msg" rows="4" placeholder="Additional message" data-i18n="additional"></textarea>
+      <button class="btn primary" type="submit" data-i18n="create">Create Enquiry</button>
+      <small>Tip: add your WhatsApp number in the script to make this live.</small>
+    </form>
+  </div>
+</section>
+
+<footer>🌱 Vega Nursery • Velagoundampatti, Namakkal, Tamil Nadu • © 2026</footer>
+
+<script>
+
+const accountBtn=document.getElementById('accountBtn');
+const accountPanel=document.getElementById('accountPanel');
+function renderAccount(){
+ const customer=localStorage.getItem('vegaCustomer');
+ document.getElementById('loginForm').hidden=!!customer;
+ document.getElementById('loggedIn').hidden=!customer;
+ document.getElementById('welcomeCustomer').textContent=customer?'Welcome, '+customer:'';
+ const isTamil=document.documentElement.lang==='ta';
+ accountBtn.textContent=customer?(isTamil?'வெளியேறு':'Logout'):(isTamil?'வாடிக்கையாளர் உள்நுழைவு':'Customer Login');
+}
+accountBtn.addEventListener('click',()=>{if(localStorage.getItem('vegaCustomer'))customerLogout();else{accountPanel.hidden=!accountPanel.hidden;}});
+function customerLogin(e){e.preventDefault();localStorage.setItem('vegaCustomer',document.getElementById('customerName').value.trim());accountPanel.hidden=true;renderAccount();}
+function customerLogout(){localStorage.removeItem('vegaCustomer');accountPanel.hidden=true;renderAccount();}
+renderAccount();
+const translations={
+"Customer Login":"வாடிக்கையாளர் உள்நுழைவு","Logout":"வெளியேறு","Customer login":"வாடிக்கையாளர் உள்நுழைவு",
+"Your name":"உங்கள் பெயர்","Login":"உள்நுழை","Simple browser session only; no password or secure customer account is stored.":"இது இந்த உலாவியில் மட்டும் செயல்படும் எளிய மாதிரி. கடவுச்சொல் அல்லது பாதுகாப்பான வாடிக்கையாளர் கணக்கு சேமிக்கப்படாது.",
+"Healthy plants. Better harvests.":"ஆரோக்கியமான செடிகள். சிறந்த விளைச்சல்.","Watermelon seedlings and turmeric seeds for growers, farms and home gardens.":"விவசாயிகள், பண்ணைகள் மற்றும் வீட்டுத் தோட்டங்களுக்கான தர்பூசணி நாற்றுகள் மற்றும் மஞ்சள் விதைகள்.",
+"View Plants":"செடிகளைப் பார்க்க","Send Enquiry":"விசாரிக்க","Watermelon / plant":"தர்பூசணி / செடி","Local":"உள்ளூர்","Velagoundampatti":"வேலக்கவுண்டம்பட்டி","Bulk":"மொத்தமாக","Enquiries welcome":"விசாரணைகள் வரவேற்கப்படுகின்றன",
+"Fresh seedlings":"புதிய நாற்றுகள்","Ready for planting":"நடவு செய்யத் தயார்",
+"Check current stock and pricing before visiting.":"வருவதற்கு முன் இருப்பு மற்றும் விலையை உறுதி செய்யவும்.",
+"All":"அனைத்தும்","Fruit":"பழச்செடிகள்","Garden":"தோட்டம்","Featured":"சிறப்பு","FEATURED":"சிறப்பு","SEEDS":"விதைகள்","FRUIT PLANTS":"பழச்செடிகள்",
+"Watermelon Seedlings":"தர்பூசணி நாற்றுகள்","Turmeric Seeds":"மஞ்சள் விதைகள்","Seedlings for watermelon cultivation. Ask about available varieties and quantities.":"தர்பூசணி சாகுபடிக்கான நாற்றுகள். கிடைக்கும் வகைகள் மற்றும் அளவுகளைப் பற்றி விசாரிக்கவும்.",
+"Turmeric seeds for planting. Ask about availability and required quantity.":"நடவு செய்வதற்கான மஞ்சள் விதைகள். இருப்பு மற்றும் தேவையான அளவைப் பற்றி விசாரிக்கவும்.",
+"/ plant":"/ செடி","/ seed":"/ விதை","Enquire →":"விசாரிக்க →","Fruit Plant Varieties":"பழச்செடி வகைகள்","Ask about currently available fruit plants for farms and home gardens.":"பண்ணைகள் மற்றும் வீட்டுத் தோட்டங்களுக்குக் கிடைக்கும் பழச்செடிகளைப் பற்றி விசாரிக்கவும்.",
+"Ask price":"விலையைக் கேட்கவும்","Garden Plants":"தோட்டச் செடிகள்","Ask for ornamental and other plants currently available.":"தற்போது கிடைக்கும் அலங்கார மற்றும் பிற செடிகளைப் பற்றி கேளுங்கள்.",
+"Made for your planting needs":"உங்கள் நடவு தேவைகளுக்காக","Healthy seedlings":"ஆரோக்கியமான நாற்றுகள்","Seedlings prepared for planting when available.":"இருப்பு இருக்கும்போது நடவுக்குத் தயாரான நாற்றுகள் கிடைக்கும்.",
+"Easy enquiries":"எளிய விசாரணை","Ask about plant type, quantity, stock and price.":"செடி வகை, அளவு, இருப்பு மற்றும் விலை பற்றி கேளுங்கள்.",
+"Bulk enquiries":"மொத்த அளவு விசாரணை","Planning a larger planting? Tell us your quantity.":"அதிக அளவில் நடவு செய்யத் திட்டமா? தேவையான அளவைத் தெரிவிக்கவும்.",
+"Local nursery":"உள்ளூர் நர்சரி","Located in Velagoundampatti, Namakkal.":"நாமக்கல் மாவட்டம், வேலக்கவுண்டம்பட்டியில் அமைந்துள்ளது.",
+"A look at our nursery":"எங்கள் நர்சரியின் புகைப்படங்கள்","Real photos of our watermelon seedlings and nursery plants at Vega Nursery.":"வேகா நர்சரியில் உள்ள தர்பூசணி நாற்றுகள் மற்றும் செடிகளின் உண்மையான புகைப்படங்கள்.",
+"Watermelon seedlings":"தர்பூசணி நாற்றுகள்","Young seedlings":"இளம் நாற்றுகள்","Nursery growing trays":"நர்சரி வளர்ப்பு தட்டுகள்","Healthy plant growth":"ஆரோக்கியமான செடி வளர்ச்சி","Seedling close-up":"நாற்றின் அருகாமைப் படம்","Plant development":"செடி வளர்ச்சி","Watermelon nursery":"தர்பூசணி நர்சரி","Seedling trays":"நாற்றுத் தட்டுகள்","New leaves":"புதிய இலைகள்","Plant handling":"செடிகளை கையாளுதல்",
+"READY TO PLANT?":"நடவு செய்யத் தயாரா?","Tell us what you need.":"உங்களுக்கு என்ன தேவை என்பதைத் தெரிவிக்கவும்.","Send the plant name and required quantity.":"செடியின் பெயர் மற்றும் தேவையான அளவை அனுப்புங்கள்.","💬 WhatsApp Us":"💬 WhatsApp-ல் தொடர்புகொள்ள",
+"Vega Nursery Location":"வேகா நர்சரி இருப்பிடம்","Open a Google Maps search for Velagoundampatti, Namakkal. Your exact business pin can be added later.":"வேலக்கவுண்டம்பட்டி, நாமக்கல் இடத்தை Google Maps-ல் திறக்கவும். உங்கள் நர்சரியின் சரியான இடத்தை பின்னர் சேர்க்கலாம்.","Open in Google Maps":"Google Maps-ல் திறக்கவும்",
+"Common questions":"பொதுவான கேள்விகள்","What is the watermelon seedling price?":"தர்பூசணி நாற்றின் விலை என்ன?","The listed watermelon seedling price is ₹1.50 per plant. Please confirm stock before ordering.":"தர்பூசணி நாற்றின் விலை ஒரு செடிக்கு ₹1.50. ஆர்டர் செய்வதற்கு முன் இருப்பை உறுதி செய்யவும்.",
+"Do you sell other plants?":"மற்ற செடிகளும் விற்பனைக்கு உள்ளனவா?","Yes. Other plant varieties are available depending on current stock.":"ஆம். தற்போதைய இருப்பைப் பொறுத்து மற்ற செடி வகைகளும் கிடைக்கும்.",
+"Can I enquire for bulk quantity?":"மொத்தமாக வாங்க விசாரிக்கலாமா?","Yes. Use the enquiry form and tell us your required quantity.":"ஆம். விசாரணைப் படிவத்தில் தேவையான அளவைத் தெரிவிக்கவும்.",
+"Where is Vega Nursery?":"வேகா நர்சரி எங்கே உள்ளது?","Velagoundampatti, Namakkal, Tamil Nadu.":"வேலக்கவுண்டம்பட்டி, நாமக்கல், தமிழ்நாடு.",
+"Send your enquiry":"உங்கள் விசாரணையை அனுப்புங்கள்","Fill in your requirement and send it directly to our WhatsApp.":"உங்கள் தேவையை நிரப்பி நேரடியாக WhatsApp மூலம் அனுப்புங்கள்.",
+"Location":"இடம்","Main product":"முக்கிய தயாரிப்பு","Phone / WhatsApp":"தொலைபேசி / WhatsApp","Plant or seed needed":"தேவையான செடி அல்லது விதை","Quantity":"அளவு","Additional message":"கூடுதல் தகவல்","Create Enquiry":"விசாரணையை அனுப்பு","Tip: add your WhatsApp number in the script to make this live.":"குறிப்பு: WhatsApp மூலம் அனுப்ப இந்தப் படிவத்தில் எண் அமைக்கப்பட்டுள்ளது.",
+"Home":"முகப்பு","Plants":"செடிகள்","Why Us":"ஏன் நாங்கள்","Gallery":"புகைப்படங்கள்","FAQ":"கேள்விகள்","Contact":"தொடர்பு",
+"Watermelon seedlings — ₹1.50 / plant":"தர்பூசணி நாற்றுகள் — ₹1.50 / செடி","Turmeric seeds — ₹1 / seed":"மஞ்சள் விதைகள் — ₹1 / விதை"
+};
+function applyLanguage(lang){
+  const useTamil=lang==='ta';
+  document.documentElement.lang=useTamil?'ta':'en';
+  // Translate keyed content first; this keeps headings, buttons and form fields in sync.
+  const keyed={
+    heroTitle:['Healthy plants. Better harvests.','ஆரோக்கியமான செடிகள். சிறந்த விளைச்சல்.'],
+    viewPlants:['View Plants','செடிகளைப் பார்க்க'], sendEnquiry:['Send Enquiry','விசாரிக்க'],
+    plantsSub:['Check current stock and pricing before visiting.','வருவதற்கு முன் இருப்பு மற்றும் விலையை உறுதி செய்யவும்.'],
+    all:['All','அனைத்தும்'], fruit:['Fruit','பழச்செடிகள்'], garden:['Garden','தோட்டம்'], featured:['Featured','சிறப்பு'],
+    watermelon:['Watermelon Seedlings','தர்பூசணி நாற்றுகள்'], turmeric:['Turmeric Seeds','மஞ்சள் விதைகள்'],
+    contactSub:['Fill in your requirement and send it directly to our WhatsApp.','உங்கள் தேவையை நிரப்பி நேரடியாக WhatsApp மூலம் அனுப்புங்கள்.'],
+    yourName:['Your name','உங்கள் பெயர்'], plantNeeded:['Plant or seed needed','தேவையான செடி அல்லது விதை'],
+    quantity:['Quantity','அளவு'], additional:['Additional message','கூடுதல் தகவல்'], create:['Create Enquiry','விசாரணையை அனுப்பு']
+  };
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const pair=keyed[el.dataset.i18n];
+    if(pair && !el.matches('input,textarea')) el.textContent=pair[useTamil?1:0];
+    if(pair && el.matches('input,textarea')) el.placeholder=pair[useTamil?1:0];
+  });
+  // Translate regular text nodes while preserving their original spacing.
+  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  let node;
+  while((node=walker.nextNode())){
+    const parent=node.parentElement;
+    if(!parent || parent.closest('script,style,[data-i18n],[data-en][data-ta]')) continue;
+    if(!node.__vegaEnglishText) node.__vegaEnglishText=node.nodeValue;
+    const original=node.__vegaEnglishText;
+    const trimmed=original.trim();
+    const translated=translations[trimmed];
+    if(translated){
+      const leading=original.match(/^\s*/)?.[0]||'';
+      const trailing=original.match(/\s*$/)?.[0]||'';
+      node.nodeValue=useTamil?leading+translated+trailing:original;
+    }
+  }
+  document.querySelectorAll('[placeholder]:not([data-i18n])').forEach(el=>{
+    if(!el.dataset.originalPlaceholder)el.dataset.originalPlaceholder=el.placeholder;
+    const original=el.dataset.originalPlaceholder;
+    el.placeholder=useTamil?(translations[original]||original):original;
+  });
+  document.querySelectorAll('[data-en][data-ta]').forEach(el=>el.innerHTML=useTamil?el.dataset.ta:el.dataset.en);
+  const button=document.getElementById('langBtn');
+  button.textContent=useTamil?'English':'தமிழ்';
+  button.setAttribute('aria-label',useTamil?'Change language to English':'Change language to Tamil');
+  button.title=useTamil?'View in English':'தமிழில் பார்க்க';
+  renderAccount();
+  localStorage.setItem('vagaLang',useTamil?'ta':'en');
+}
+const viewer=document.getElementById('photoViewer');
+const viewerImage=document.getElementById('viewerImage');
+const galleryImages=[...document.querySelectorAll('.gallery img')];
+const viewerThumbs=document.getElementById('viewerThumbs');
+const zoomRange=document.getElementById('zoomRange');
+let currentPhoto=0, zoom=1, touchStartDistance=0, lastTap=0;
+function setZoom(value){zoom=Math.max(1,Math.min(3,Number(value)||1));viewerImage.style.transform=`scale(${zoom})`;zoomRange.value=String(zoom);}
+function showPhoto(index){
+ currentPhoto=(index+galleryImages.length)%galleryImages.length;
+ const source=galleryImages[currentPhoto];
+ viewerImage.src=source.src;viewerImage.alt=source.alt;viewerImage.style.transform='scale(1)';setZoom(1);
+ document.getElementById('viewerCount').textContent=`${currentPhoto+1} / ${galleryImages.length}`;
+ document.getElementById('viewerCaption').textContent=source.closest('figure')?.querySelector('figcaption')?.textContent||source.alt;
+ viewerThumbs.querySelectorAll('button').forEach((button,i)=>{button.classList.toggle('active',i===currentPhoto);button.setAttribute('aria-current',i===currentPhoto?'true':'false');});
+}
+galleryImages.forEach((img,index)=>{
+ img.tabIndex=0;img.setAttribute('role','button');img.setAttribute('aria-label','Open photo: '+(img.alt||'nursery photo'));
+ img.addEventListener('click',()=>openViewer(index));
+ img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openViewer(index);}});
+ const thumb=document.createElement('button');thumb.type='button';thumb.className='viewer-thumb';thumb.setAttribute('aria-label','Show photo '+(index+1));
+ const thumbImg=document.createElement('img');thumbImg.src=img.src;thumbImg.alt='';thumb.appendChild(thumbImg);thumb.addEventListener('click',()=>showPhoto(index));viewerThumbs.appendChild(thumb);
+});
+function openViewer(index){showPhoto(index);viewer.classList.add('open');viewer.setAttribute('aria-hidden','false');document.body.classList.add('viewer-open');viewer.querySelector('.viewer-close').focus();}
+function closeViewer(){viewer.classList.remove('open');viewer.setAttribute('aria-hidden','true');document.body.classList.remove('viewer-open');}
+function nextPhoto(){showPhoto(currentPhoto+1)}function previousPhoto(){showPhoto(currentPhoto-1)}
+viewer.querySelector('.viewer-close').addEventListener('click',closeViewer);
+viewer.querySelector('.viewer-next').addEventListener('click',nextPhoto);
+viewer.querySelector('.viewer-prev').addEventListener('click',previousPhoto);
+viewer.querySelector('.zoom-in').addEventListener('click',()=>setZoom(zoom+.25));
+viewer.querySelector('.zoom-out').addEventListener('click',()=>setZoom(zoom-.25));
+zoomRange.addEventListener('input',e=>setZoom(e.target.value));
+viewer.addEventListener('click',e=>{if(e.target===viewer)closeViewer();});
+document.addEventListener('keydown',e=>{if(!viewer.classList.contains('open'))return;if(e.key==='Escape')closeViewer();if(e.key==='ArrowRight')nextPhoto();if(e.key==='ArrowLeft')previousPhoto();});
+viewerImage.addEventListener('wheel',e=>{e.preventDefault();setZoom(zoom+(e.deltaY<0?.15:-.15));},{passive:false});
+viewerImage.addEventListener('touchstart',e=>{if(e.touches.length===2){touchStartDistance=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);}},{passive:true});
+viewerImage.addEventListener('touchmove',e=>{if(e.touches.length===2&&touchStartDistance){const distance=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);setZoom(zoom*distance/touchStartDistance);touchStartDistance=distance;e.preventDefault();}},{passive:false});
+viewerImage.addEventListener('touchend',()=>{touchStartDistance=0;});
+viewerImage.addEventListener('dblclick',()=>setZoom(zoom>1?1:2));
+const savedLang=localStorage.getItem('vagaLang')||'en';document.getElementById('langBtn').addEventListener('click',()=>applyLanguage(document.documentElement.lang==='ta'?'en':'ta'));applyLanguage(savedLang);
+function filterPlants(type, btn) {
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.card').forEach(card=>{
+    card.style.display = type==='all' || card.dataset.type.includes(type) ? '' : 'none';
+  });
+}
+function sendEnquiry(e) {
+  e.preventDefault();
+  const whatsappNumber = "918825469697"; // Vega Nursery WhatsApp number
+  const text = `Hello Vega Nursery,\nName: ${document.getElementById('name').value}\nPlant: ${document.getElementById('plant').value}\nQuantity: ${document.getElementById('qty').value}\nMessage: ${document.getElementById('msg').value}`;
+  if (!whatsappNumber) { alert('Enquiry form is working. Add your WhatsApp number in index.html to send directly.'); return; }
+  window.open('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(text), '_blank');
+}
+</script>
+</body>
+</html>
